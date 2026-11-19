@@ -1,0 +1,28 @@
+---
+layout: default
+---
+<section class="wrap pagehead sec-b"><article class="post" id="post">
+  <div class="meta">{{ page.category }} · {{ page.date_label | default: page.date | date: "%-d %B %Y" }}</div>
+  <h1>{{ page.title }}</h1>
+  <div class="rule"></div>
+  {% if page.image %}<img src="{{ page.image }}" alt="{{ page.image_alt | default: page.title | escape }}">{% endif %}
+  {{ content }}
+  {% if page.source_url %}<p class="sm">Source: <a href="{{ page.source_url }}" rel="noopener">{{ page.source_label | default: page.source_url }}</a></p>{% endif %}
+  <p class="sm muted">Published {{ page.date | date: "%-d %B %Y" }} by MiS (Maliwan Intelligence Service). </p>
+  <p><a class="more" href="/news/">Back to all news</a></p>
+</article></section>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "NewsArticle",
+  "headline": {{ page.title | jsonify }},
+  "description": {{ page.summary | jsonify }},
+  "datePublished": "{{ page.date | date_to_xmlschema }}",
+  "dateModified": "{{ page.last_modified | default: page.date | date_to_xmlschema }}",
+  "image": ["{{ site.url }}{{ page.image }}"],
+  "articleSection": {{ page.category | jsonify }},
+  "mainEntityOfPage": "{{ site.url }}{{ page.url }}",
+  "author": {"@type": "Organization", "name": "MiS", "url": "{{ site.url }}/"},
+  "publisher": {"@type": "Organization", "name": "MiS – Maliwan Intelligence Service", "url": "{{ site.url }}/", "logo": {"@type": "ImageObject", "url": "{{ site.url }}/images/apple-touch-icon.png"}}
+}
+</script>

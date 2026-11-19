@@ -1,0 +1,20 @@
+---
+layout: null
+permalink: /llms.txt
+---
+# MiS – Maliwan Intelligence Service
+
+> Renewable Energy & Power System Partner in Vietnam, Thailand. MiS provides project advisory from feasibility to COD and technical due diligence, power system control solutions (integrated SCADA, EMS, PPC, operation control centres, microgrid control), and market partnership for equipment manufacturers.
+
+Legal entities: Maliwan Intelligence Service Co., Ltd. (Thailand, Nonthaburi) and MI Energies Co., Ltd. (Vietnam, Ho Chi Minh City). Contact: info@mi-energies.com, +66 86 564 7644 (Thailand), +84 987 491 286 (Vietnam).
+
+## Pages
+- [Home]({{ site.url }}/): overview of MiS, markets, services and partners
+- [Services]({{ site.url }}/services/): five advisory packages, control solutions, market partnership
+- [Projects]({{ site.url }}/projects/): MiS references in Thailand
+- [About & team]({{ site.url }}/about/): team, team experience and contact
+- [News]({{ site.url }}/news/): company news and market notes ([RSS]({{ site.url }}/feed.xml))
+
+## News
+{% for p in site.posts %}- [{{ p.title }}]({{ site.url }}{{ p.url }}) ({{ p.date | date: "%Y-%m-%d" }}, {{ p.category }}): {{ p.summary }}
+{% endfor %}

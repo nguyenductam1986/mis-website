@@ -1,0 +1,23 @@
+---
+layout: null
+permalink: /feed.xml
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>MiS – News and market notes</title>
+  <link>{{ site.url }}/news/</link>
+  <atom:link href="{{ site.url }}/feed.xml" rel="self" type="application/rss+xml"/>
+  <description>News from MiS and notes on the power markets of Vietnam and Thailand.</description>
+  <language>en</language>
+  <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
+{% for p in site.posts limit:30 %}  <item>
+    <title>{{ p.title | xml_escape }}</title>
+    <link>{{ site.url }}{{ p.url }}</link>
+    <guid isPermaLink="true">{{ site.url }}{{ p.url }}</guid>
+    <pubDate>{{ p.date | date_to_rfc822 }}</pubDate>
+    <category>{{ p.category | xml_escape }}</category>
+    <description>{{ p.content | xml_escape }}</description>
+  </item>
+{% endfor %}</channel>
+</rss>

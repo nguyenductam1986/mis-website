@@ -1,0 +1,16 @@
+---
+layout: null
+permalink: /post/
+sitemap: false
+---
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>News – MiS</title><meta name="robots" content="noindex, follow"><link rel="canonical" href="{{ site.url }}/news/">
+<script>
+(function(){var id=new URLSearchParams(location.search).get('id');
+var ok={ {% for p in site.posts %}{{ p.slug | jsonify }}:1{% unless forloop.last %},{% endunless %}{% endfor %} };
+location.replace(id && ok[id] ? '/news/' + id + '/' : '/news/');})();
+</script></head>
+<body><p>MiS news has moved to <a href="/news/">mi-energies.com/news/</a>. Posts:</p>
+<ul>{% for p in site.posts %}<li><a href="{{ p.url }}">{{ p.title }}</a> – {{ p.summary }}</li>{% endfor %}</ul>
+</body></html>

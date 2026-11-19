@@ -1,0 +1,5 @@
+<a class="card rv d{{ include.i | modulo: 3 }}" href="{{ include.p.url }}" data-cat="{{ include.p.category }}">
+  <div class="zoom"><div class="ph" role="img" aria-label="{{ include.p.image_alt | default: include.p.title | escape }}" style="background-image:url('{{ include.p.image }}')"></div></div>
+  <div class="body"><div class="meta">{{ include.p.category }} · {{ include.p.date_label | default: include.p.date | date: "%-d %B %Y" }}</div>
+  <h3>{{ include.p.title }}</h3><p class="sm">{{ include.p.summary }}</p><span class="more">Read more</span></div>
+</a>

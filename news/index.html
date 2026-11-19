@@ -1,0 +1,66 @@
+---
+layout: null
+---
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>News – MiS</title>
+<meta name="description" content="News from MiS and notes on the power markets of Vietnam and Thailand.">
+<meta property="og:title" content="News – MiS">
+<meta property="og:description" content="News from MiS and notes on the power markets of Vietnam and Thailand.">
+<meta property="og:image" content="/images/hero-wind-substation.jpg">
+<meta name="theme-color" content="#8B1A2B">
+<link rel="icon" type="image/png" href="/images/favicon.png">
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="stylesheet" href="/css/style.css">
+<script>document.documentElement.className += ' js';</script>
+<link rel="canonical" href="https://mi-energies.com/news/">
+<link rel="alternate" type="application/rss+xml" title="MiS news" href="/feed.xml">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="hdr">
+  <div class="wrap">
+    <a class="brand" href="/" aria-label="MiS – home"><img src="/images/mis-mark-dark.png" alt="" width="340" height="236"><span class="bt"><span class="bn">MiS</span><span class="bs">Maliwan Intelligence Service</span></span></a>
+    <button class="burger" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="/services/">Services</a>
+      <a href="/projects/">Projects</a>
+      <a href="/about/">About &amp; team</a>
+      <a href="/news/" class="on" aria-current="page">News</a>
+      <a class="btn" href="/about/#contact">Contact us</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<section class="wrap pagehead sec-b">
+  <div class="head rv"><div class="eyebrow">News</div><h1 style="margin-top:14px">News and market notes</h1><div class="rule"></div><p class="lead">What MiS is working on, and what we see in the power markets of Vietnam and Thailand.</p></div>
+  <div class="chips" role="group" aria-label="Filter news">
+    <button class="chip on" type="button" data-cat="All" aria-pressed="true">All</button>
+    <button class="chip" type="button" data-cat="Company" aria-pressed="false">Company</button>
+    <button class="chip" type="button" data-cat="Market" aria-pressed="false">Market</button>
+  </div>
+  <div class="news-grid" id="news-list">
+{% for p in site.posts %}{% include news-card.html p=p i=forloop.index0 %}{% endfor %}  </div>
+</section>
+</main>
+<footer class="ftr">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <div class="fbrand"><img src="/images/mis-mark-light.png" alt="" width="340" height="236"><span class="bt"><span class="bn">MiS</span><span class="bs">Maliwan Intelligence Service</span></span></div>
+        <p>Renewable Energy &amp; Power System Partner in Vietnam, Thailand</p>
+      </div>
+      <div><div class="h">Thailand</div><div class="co">Maliwan Intelligence Service Co., Ltd.</div><div lang="th">บริษัท มะลิวรรณ อินเทลลิเจ็นซ เซอร์วิส จำกัด</div><div>Nonthaburi, Thailand</div><div>Tel. <a href="tel:+66865647644">+66 86 564 7644</a></div></div>
+      <div><div class="h">Vietnam</div><div class="co">MI Energies Co., Ltd.</div><div lang="vi">Công ty TNHH MI Energies Việt Nam</div><div>Ho Chi Minh City, Vietnam</div><div>Tel. <a href="tel:+84987491286">+84 987 491 286</a></div></div>
+      <div><div class="h">Online</div><div><a href="mailto:info@mi-energies.com">info@mi-energies.com</a></div>
+        <ul style="margin-top:14px"><li><a href="/services/">Services</a></li><li><a href="/projects/">Projects</a></li><li><a href="/about/">About &amp; team</a></li><li><a href="/news/">News</a></li></ul></div>
+    </div>
+    <div class="bot"><span>© 2026 MiS. All rights reserved.</span><span>www.mi-energies.com</span></div>
+  </div>
+</footer>
+<script src="/js/main.js"></script>
+</body>
+</html>
