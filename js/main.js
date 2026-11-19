@@ -41,7 +41,7 @@
 
   // Contact form: sends the message directly to info@mi-energies.com
   // through the MiS Google Apps Script web app (see FORM_ENDPOINT below).
-  var FORM_ENDPOINT = 'PASTE_APPS_SCRIPT_WEB_APP_URL_HERE';
+  var FORM_ENDPOINT = 'https://script.google.com/macros/s/AKfycbyyoLw0xOt1htYWCSdscMSe7NHjPzW1LJxF63zi7sAlgl6IZdzOSJJKrMFVWE13i6JlFQ/exec';
   var form = document.getElementById('contact-form');
   if (form) {
     var sent = document.getElementById('contact-sent');
