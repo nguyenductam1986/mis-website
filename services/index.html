@@ -12,6 +12,7 @@
 <link rel="icon" type="image/png" href="/images/favicon.png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
 <link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/lifecycle.css">
 <script>document.documentElement.className += ' js';</script>
 <link rel="canonical" href="https://mi-energies.com/services/">
 </head>
@@ -38,30 +39,114 @@
 </div></section>
 
 <section class="wrap sec" id="advisory">
-  <div class="head rv"><div class="eyebrow">01 · Project advisory</div><h2>Five packages across the project lifecycle</h2><div class="rule"></div></div>
-  <div class="life rv" aria-hidden="true">
-    <div class="phase">Development</div><div class="phase">Construction</div><div class="phase">Energisation &amp; COD</div><div class="phase">Operation &amp; transaction</div>
-    <div class="bar" style="grid-column:1"><sup>1</sup>Development Permitting</div><div class="bar" style="grid-column:2/4"><sup>2</sup>COD-ready Coordination</div>
-    <div class="bar" style="grid-column:2/4;grid-row:3"><sup>3</sup>Grid &amp; Control Review</div>
-    <div class="bar g" style="grid-column:1/4;grid-row:4"><sup>4</sup>Owner's Advisor</div><div class="bar" style="grid-column:4;grid-row:4"><sup>5</sup>Technical Due Diligence</div>
+  <div class="head rv"><div class="eyebrow">01 · Project advisory</div><h2>Technical and regulatory support at critical project stages</h2><div class="rule"></div>
+    <p class="lead">Each package has a defined place in the project lifecycle and defined deliverables. Select a package to see the details.</p></div>
+
+  <div class="lc" id="lc">
+    <div class="lc-beam" aria-hidden="true"></div>
+    <div class="lc-map rv">
+      <div class="lc-ph" data-st="1" style="grid-column:1">Development</div>
+      <div class="lc-ph" data-st="2" style="grid-column:2">Construction</div>
+      <div class="lc-ph" data-st="3" style="grid-column:3">Energisation &amp; COD</div>
+      <div class="lc-ph" data-st="4" style="grid-column:4">Operation &amp; transaction</div>
+      <div class="lc-guide" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+
+      <button type="button" class="lc-bar" data-pkg="av1" data-stages="1" aria-controls="lc-panel" aria-expanded="false" style="grid-column:1;grid-row:2;justify-self:start">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 14.5l2 2 4-4"/></svg>
+        <span class="nm">Development Permitting</span><span class="st">Development</span>
+      </button>
+      <button type="button" class="lc-bar" data-pkg="av3" data-stages="2 3" aria-controls="lc-panel" aria-expanded="false" style="grid-column:2/4;grid-row:3">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4M7 12.5l3-3 3 2 4-4"/></svg>
+        <span class="nm">Grid &amp; Control Review</span><span class="st">Construction · Energisation &amp; COD</span>
+      </button>
+      <button type="button" class="lc-bar" data-pkg="av2" data-stages="3" aria-controls="lc-panel" aria-expanded="false" style="grid-column:3;grid-row:4;justify-self:center">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg>
+        <span class="nm">COD-ready Coordination</span><span class="st">Energisation &amp; COD</span>
+      </button>
+      <button type="button" class="lc-bar" data-pkg="av5" data-stages="4" aria-controls="lc-panel" aria-expanded="false" style="grid-column:4;grid-row:5;justify-self:end">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg>
+        <span class="nm">Technical Due Diligence</span><span class="st">Operation &amp; transaction</span>
+      </button>
+      <button type="button" class="lc-bar g" data-pkg="av4" data-stages="1 2 3" aria-controls="lc-panel" aria-expanded="false" style="grid-column:1/4;grid-row:6">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.2"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="17" cy="9" r="2.5"/><path d="M16.5 14.1c2.6.5 4.5 2.9 4.5 5.9"/></svg>
+        <span class="nm">Owner's Advisor</span><span class="st">Development to COD</span>
+      </button>
+    </div>
+
+    <div class="lc-panel" id="lc-panel" role="region" aria-label="Package details">
+      <div class="lc-card">
+        <button type="button" class="lc-x" aria-label="Close details"></button>
+
+        <section class="lc-pk" data-pkg="av1">
+          <div class="tag">Development</div>
+          <h3>Development Permitting</h3><div class="rl"></div>
+          <p class="sit">For developers of solar, onshore and offshore wind projects, from site to the approvals needed before investment and construction.</p>
+          <div class="row"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6h11M9 12h11M9 18h11M4 6h.01M4 12h.01M4 18h.01"/></svg><div><div class="lbl">What we do</div><ul><li>Permitting roadmap: procedures, authorities, timeline and risks</li><li>Investment policy approval and feasibility study</li><li>Land, environment (E&amp;S) and sea-area use approvals</li><li>PPA negotiation</li></ul></div></div>
+          <div class="row"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></svg><div><div class="lbl">You receive</div><ul><li>Permitting roadmap and dossier list</li><li>Submissions tracked until decisions are issued</li></ul></div></div>
+          <div class="row"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.2"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="17" cy="9" r="2.5"/><path d="M16.5 14.1c2.6.5 4.5 2.9 4.5 5.9"/></svg><div><div class="lbl">Typical clients</div><p>Developers · foreign PMC</p></div></div>
+        </section>
+
+        <section class="lc-pk" data-pkg="av2">
+          <div class="tag">Energisation &amp; COD</div>
+          <h3>COD-ready Coordination</h3><div class="rl"></div>
+          <p class="sit">For the owner or EPC responsible for getting the plant connected, energised and recognised at COD.</p>
+          <div class="row"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6h11M9 12h11M9 18h11M4 6h.01M4 12h.01M4 18h.01"/></svg><div><div class="lbl">What we do</div><ul><li>Grid connection agreement with EVN and NSMO, with power system studies by our partner</li><li>First energisation, synchronisation and testing dossiers</li><li>Electricity operating licence</li><li>COD and CCA recognition</li></ul></div></div>
+          <div class="row"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></svg><div><div class="lbl">You receive</div><ul><li>Milestone roadmap and dossier list</li><li>Submissions tracked until COD is recognised</li></ul></div></div>
+          <div class="row"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.2"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="17" cy="9" r="2.5"/><path d="M16.5 14.1c2.6.5 4.5 2.9 4.5 5.9"/></svg><div><div class="lbl">Typical clients</div><p>Owners · EPC · foreign PMC</p></div></div>
+        </section>
+
+        <section class="lc-pk" data-pkg="av3">
+          <div class="tag">Construction · COD</div>
+          <h3>Grid &amp; Control Review</h3><div class="rl"></div>
+          <p class="sit">For EPCs and owner's engineers who need an independent check of the grid and control scope, on new builds and retrofits.</p>
+          <div class="row"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6h11M9 12h11M9 18h11M4 6h.01M4 12h.01M4 18h.01"/></svg><div><div class="lbl">What we do</div><ul><li>HV/MV and substation design review</li><li>SCADA/PPC/EMS and C&amp;I review</li><li>FAT and SAT witnessing</li><li>Grid code compliance; power system studies with our partner</li></ul></div></div>
+          <div class="row"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></svg><div><div class="lbl">You receive</div><ul><li>Review reports and comment lists</li><li>FAT/SAT reports and punch lists</li><li>Grid code compliance matrix</li></ul></div></div>
+          <div class="row"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.2"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="17" cy="9" r="2.5"/><path d="M16.5 14.1c2.6.5 4.5 2.9 4.5 5.9"/></svg><div><div class="lbl">Typical clients</div><p>EPC · foreign PMC/OE</p></div></div>
+        </section>
+
+        <section class="lc-pk" data-pkg="av4">
+          <div class="tag">Development to COD</div>
+          <h3>Owner's Advisor</h3><div class="rl"></div>
+          <p class="sit">For owners who want an independent owner-side view across contractors and stages.</p>
+          <div class="row"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6h11M9 12h11M9 18h11M4 6h.01M4 12h.01M4 18h.01"/></svg><div><div class="lbl">What we do</div><ul><li>Project governance, stage gates and board reporting</li><li>EPC, OEM and O&amp;M contract strategy review</li><li>Interface management between EPC, OEM and the grid</li><li>Technical assessment of variations and claims</li></ul></div></div>
+          <div class="row"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></svg><div><div class="lbl">You receive</div><ul><li>Governance plan and stage-gate decision packs</li><li>Periodic reports, interface matrix and open-issue log</li></ul></div></div>
+          <div class="row"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.2"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="17" cy="9" r="2.5"/><path d="M16.5 14.1c2.6.5 4.5 2.9 4.5 5.9"/></svg><div><div class="lbl">Typical clients</div><p>Owners · foreign PMC</p></div></div>
+        </section>
+
+        <section class="lc-pk" data-pkg="av5">
+          <div class="tag">Operation &amp; transaction</div>
+          <h3>Technical Due Diligence</h3><div class="rl"></div>
+          <p class="sit">For investors buying an operating plant in Vietnam, or owners preparing one for sale. We act for one side per transaction.</p>
+          <div class="row"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6h11M9 12h11M9 18h11M4 6h.01M4 12h.01M4 18h.01"/></svg><div><div class="lbl">What we do</div><ul><li>Register of dossiers submitted to authorities</li><li>Technical gap review against regulations and signed agreements</li><li>SCADA/PPC/EMS and metering survey</li><li>Curtailment history and outlook; PPA and tariff revenue risks</li></ul></div></div>
+          <div class="row"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></svg><div><div class="lbl">You receive</div><ul><li>Ranked issue list with indicative cost and time to fix</li><li>Curtailment outlook with stated assumptions</li></ul></div></div>
+          <div class="row"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.2"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="17" cy="9" r="2.5"/><path d="M16.5 14.1c2.6.5 4.5 2.9 4.5 5.9"/></svg><div><div class="lbl">Typical clients</div><p>Buyers · sellers · transaction advisers</p></div></div>
+        </section>
+
+        <div class="lc-empty"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3 5 21l5-6 4 7 3-1.5-4-7h7z"/></svg><p>Select a package on the lifecycle to see its scope, deliverables and typical clients.</p></div>
+
+        <div class="lc-foot"><a class="btn lc-cta" href="/about/#contact">Discuss this package</a></div>
+      </div>
+    </div>
+    <div class="lc-backdrop" aria-hidden="true"></div>
+
+    <svg class="lc-land" viewBox="0 0 1300 170" preserveAspectRatio="xMidYMax slice" aria-hidden="true"><g transform="translate(0 50)">
+      <path d="M0 92 C180 62 330 70 480 84 S800 104 980 78 1200 58 1300 70 V120 H0z" fill="#F1E7DA"/>
+      <path d="M0 104 C220 88 420 96 640 104 S1040 112 1300 96 V120 H0z" fill="#EADFCF"/>
+      <g fill="#DCCFBD"><path d="M40 98h70l-10 12H30z"/><path d="M120 98h70l-10 12h-70z"/><path d="M200 98h70l-10 12h-70z"/><path d="M280 98h70l-10 12h-70z"/><path d="M70 82h62l-8 10H62z"/><path d="M142 82h62l-8 10h-62z"/><path d="M214 82h62l-8 10h-62z"/></g>
+      <g stroke="#CDBDA7" stroke-width="2" stroke-linecap="round" fill="none"><path d="M1040 92V40M1040 40l-2-26M1040 40l22 12M1040 40l-21 13"/><path d="M1130 86V28M1130 28l-2-28M1130 28l24 14M1130 28l-23 15"/><path d="M1220 90V52M1220 52l-1-20M1220 52l17 9M1220 52l-16 10"/></g>
+    </g></svg>
   </div>
-  <div class="grid g5 pkgs">
-    <div class="pkg rv "><div class="k">PACKAGE 1</div><h3>Development Permitting</h3><p>Investment policy, feasibility study, environment, land/sea-area use right approvals, and PPA negotiation for solar farm, onshore and offshore wind farm.</p><p><span class="b">You receive:</span> permitting roadmap, dossiers, tracking until decisions are issued.</p><div class="for">Developers · foreign PMC</div></div>
-    <div class="pkg rv d1"><div class="k">PACKAGE 2</div><h3>COD-ready Coordination</h3><p>Grid connection approval, energisation and testing, electricity operating licence, COD and CCA recognition.</p><p><span class="b">You receive:</span> milestone roadmap, submissions, tracking until COD is recognised.</p><div class="for">Owners · EPC · foreign PMC</div></div>
-    <div class="pkg rv d2"><div class="k">PACKAGE 3</div><h3>Grid &amp; Control Review</h3><p>Review of HV/MV design, SCADA/PPC/EMS and integrated control systems; FAT and SAT; grid code compliance; power system studies with our partners.</p><p><span class="b">You receive:</span> review reports, comment lists, compliance matrix.</p><div class="for">EPC · foreign PMC/OE</div></div>
-    <div class="pkg rv d3"><div class="k">PACKAGE 4</div><h3>Owner's Advisor</h3><p>Project governance, stage gates and board reporting; EPC, OEM and O&amp;M contract strategy; interface and claims management.</p><p><span class="b">You receive:</span> an owner-side coordinator through each stage.</p><div class="for">Owners · foreign PMC</div></div>
-    <div class="pkg rv d4"><div class="k">PACKAGE 5</div><h3>Technical Due Diligence</h3><p>For operating plants: document register, technical gap review, SCADA/PPC/EMS and metering survey, curtailment outlook, PPA and tariff revenue risks.</p><p><span class="b">You receive:</span> ranked issue list with indicative cost and time to fix.</p><div class="for">Buyers · sellers · transaction advisers</div></div>
-  </div>
+  <p class="lc-hint"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg>Click a package to explore scope and deliverables.</p>
   <p class="sm rv" style="margin-top:24px"><span class="b">Also available with a package:</span> project company set-up (with law firms), post-COD operation support, carbon, I-REC and ITMO, and local administrative support for companies new to Vietnam.</p>
 
   <h3 class="rv" style="margin:64px 0 20px;font-size:1.45rem">Which package fits your situation</h3>
   <div class="tbl rv"><table>
     <thead><tr><th scope="col">Your situation</th><th scope="col">What we propose</th></tr></thead>
     <tbody>
-      <tr><td>Investor buying an operating plant</td><td>Technical Due Diligence; upgrades after closing if needed</td></tr>
-      <tr><td>Owner preparing a plant for sale</td><td>Seller-side document preparation for the data room</td></tr>
-      <tr><td>Foreign developer with no team in Vietnam yet</td><td>Local administrative support, Development Permitting, then COD-ready Coordination</td></tr>
-      <tr><td>EPC contractor responsible for energisation and COD</td><td>COD-ready Coordination with Grid &amp; Control Review</td></tr>
+      <tr><td>Investor buying an operating plant</td><td><a href="#advisory" data-go="av5">Technical Due Diligence</a>; upgrades after closing if needed</td></tr>
+      <tr><td>Owner preparing a plant for sale</td><td>Seller-side document preparation for the data room (<a href="#advisory" data-go="av5">Technical Due Diligence</a>)</td></tr>
+      <tr><td>Foreign developer with no team in Vietnam yet</td><td>Local administrative support, <a href="#advisory" data-go="av1">Development Permitting</a>, then <a href="#advisory" data-go="av2">COD-ready Coordination</a></td></tr>
+      <tr><td>EPC contractor responsible for energisation and COD</td><td><a href="#advisory" data-go="av2">COD-ready Coordination</a> with <a href="#advisory" data-go="av3">Grid &amp; Control Review</a></td></tr>
       <tr><td>International PMC or owner's engineer</td><td>Any package, as sub-consultant or in consortium</td></tr>
     </tbody>
   </table></div>
@@ -122,5 +207,6 @@
   </div>
 </footer>
 <script src="/js/main.js"></script>
+<script src="/js/lifecycle.js"></script>
 </body>
 </html>
