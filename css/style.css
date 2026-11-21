@@ -176,19 +176,7 @@ a.card:hover{color:var(--tx);transform:translateY(-4px);box-shadow:0 18px 40px -
 .caps .wide{grid-column:1/-1}
 .note{font-size:.84rem;font-style:italic;color:var(--m)}
 
-/* lifecycle + packages */
-.life{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:5px;font-size:.86rem;font-weight:700}
-.life>div{padding:10px 14px;display:flex;align-items:center;gap:10px;min-height:38px}
-.life .phase{background:var(--d);color:#fff;letter-spacing:.04em}
-.life .bar{background:var(--b);color:#fff}
-.life .bar.g{background:var(--g);color:var(--d)}
-.life sup{font-size:.7em;opacity:.85}
-.pkgs{margin-top:24px}
-.pkg{background:var(--t);border-top:2px solid var(--g);padding:24px 20px 20px;display:flex;flex-direction:column;gap:12px;height:100%}
-.pkg .k{font-size:10.5px;font-weight:700;letter-spacing:.24em;color:var(--gt)}
-.pkg h3{color:var(--b);font-size:1.12rem;min-height:2.5em}
-.pkg p{font-size:.9rem;line-height:1.55}
-.pkg .for{margin-top:auto;padding-top:14px;border-top:1px solid var(--l);font-size:.82rem;color:var(--m)}
+/* tables */
 .tbl{overflow-x:auto}
 table{width:100%;min-width:600px;border-collapse:collapse;font-size:.94rem}
 th{text-align:left;padding:13px 18px;background:var(--d);color:#fff;font-size:.82rem;letter-spacing:.08em;text-transform:uppercase}
@@ -315,7 +303,6 @@ form.contact .note{font-style:normal}
   .nav.open{display:flex}
   .nav .btn{margin-top:8px}
   .g3,.partners,.refs{grid-template-columns:minmax(0,1fr)}
-  .life{display:none}
   .seats{grid-template-columns:repeat(2,minmax(0,1fr))}
   .seats div:last-child{grid-column:1/-1}
   .worked{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:22px}
@@ -340,7 +327,6 @@ form.contact .note{font-style:normal}
   .brand .bs{display:none}
   .market .ph{height:240px}
   .lots>div{grid-template-columns:minmax(0,1fr);gap:4px}
-  .pkg h3{min-height:0}
   form.contact{padding:24px}
 }
 
